@@ -53,7 +53,7 @@
 						<br>
 					</h2>
 					<p>
-						<font style="font-size: 32px;">A&nbsp;Javascript&nbsp;framework for single pages apps</font>
+						<font style="font-size: 32px;">A&nbsp;Javascript&nbsp;framework for single page apps</font>
 					</p>
 				</section>
 				<section>
@@ -91,8 +91,8 @@
 						<span>Example</span>
 						<br>
 					</h2>
-					<div>
-						<pre><code> &lt;body ng-init="univ='The Ohio State University'; mascot='Brutus Buckeye';"&gt;</code><code>     I go to {{univ}}. Our mascot is {{mascot}}.</code><code> &lt;/div&gt;</code></pre>
+					<div ng-non-bindable>
+						<pre><code> &lt;div ng-init="univ='The Ohio State University'; mascot='Brutus Buckeye';"&gt;</code><code>     I go to {{univ}}. Our mascot is {{mascot}}.</code><code> &lt;/div&gt;</code></pre>
 					</div>
 					<br>
 					<h2>Output</h2>
@@ -122,8 +122,8 @@
 						<span>Example</span>
 						<br>
 					</h2>
-					<div>
-						<pre><code> &lt;div ng-init="fiveDevs=['Mark T', 'Brandon', 'Evan', 'Naman', Mark N'];"&gt;</code><code>      &lt;h1&gt;The 5Devs&lt;/h1&gt;</code><code>      &lt;ul&gt;</code><code>            &lt;li ng-repeat="dev in fivedevs"&gt;{{dev}}&lt;/li&gt;</code><code>      &lt;/ul&gt;</code><code> &lt;/div&gt;</code></pre>
+					<div ng-non-bindable>
+						<pre><code> &lt;div ng-init="fiveDevs=['Mark T', 'Brandon', 'Evan', 'Naman', 'Mark N'];"&gt;</code><code>      &lt;h1&gt;The 5Devs&lt;/h1&gt;</code><code>      &lt;ul&gt;</code><code>            &lt;li ng-repeat="dev in fivedevs"&gt;{{dev}}&lt;/li&gt;</code><code>      &lt;/ul&gt;</code><code> &lt;/div&gt;</code></pre>
 					</div>
 				</section>
 				<section>
@@ -190,7 +190,7 @@
 				<section>
 					<h2>Example</h2>
 					<div ng-non-bindable>
-						<pre><code> &lt;body ng-init="fiveDevs=['Mark T', 'Brandon', 'Evan', 'Naman', Mark N'];"&gt;</code><code>      &lt;input type="text" ng-model="searchString" /&gt;</code><code>      &lt;ul&gt;</code><code>           &lt;li ng-repeat="devs in fiveDevs | filter: searchString"&gt;{{dev}}&lt;/li&gt;</code><code>      &lt;/ul&gt;</code><code> &lt;/body&gt;</code></pre>
+						<pre><code> &lt;div ng-init="fiveDevs=['Mark T', 'Brandon', 'Evan', 'Naman', 'Mark N'];"&gt;</code><code>      &lt;input type="text" ng-model="searchString" /&gt;</code><code>      &lt;ul&gt;</code><code>           &lt;li ng-repeat="devs in fiveDevs | filter: searchString"&gt;{{dev}}&lt;/li&gt;</code><code>      &lt;/ul&gt;</code><code> &lt;/div&gt;</code></pre>
 					</div>
 				</section>
 				<section>
